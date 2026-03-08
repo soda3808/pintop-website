@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PinTop Support — FAQ, troubleshooting, permissions setup, and license activation help for PinTop on macOS.">
+    <meta name="author" content="PinTop">
+    <title>Support — PinTop</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+            background: #0a0a1a; color: #e8e8f0; line-height: 1.8;
+        }
+        .container { max-width: 720px; margin: 0 auto; padding: 60px 20px; }
+        h1 { font-size: 32px; margin-bottom: 8px; color: #c0c0e0; }
+        .subtitle { color: #707090; font-size: 15px; margin-bottom: 40px; }
+        h2 { font-size: 20px; margin: 40px 0 16px; color: #a0a0d0; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+        h3 { font-size: 16px; margin: 24px 0 8px; color: #c0c0e0; }
+        p, li { font-size: 15px; color: #9595b5; margin-bottom: 12px; }
+        ul, ol { padding-left: 24px; }
+        a { color: #6ea8fe; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .back { display: inline-block; margin-bottom: 32px; font-size: 14px; }
+        .faq-item { margin-bottom: 28px; }
+        .faq-q { font-size: 16px; font-weight: 600; color: #d0d0f0; margin-bottom: 8px; }
+        .faq-a { color: #9595b5; font-size: 15px; }
+        code { background: rgba(255,255,255,0.08); padding: 2px 6px; border-radius: 4px; font-family: 'SF Mono', Menlo, monospace; font-size: 13px; color: #c0c0e0; }
+        .shortcut-table { width: 100%; border-collapse: collapse; margin: 12px 0 20px; }
+        .shortcut-table td { padding: 8px 12px; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 14px; }
+        .shortcut-table td:first-child { font-family: 'SF Mono', Menlo, monospace; color: #6ea8fe; width: 160px; }
+        .shortcut-table td:last-child { color: #9595b5; }
+        .contact-box { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 24px; margin-top: 20px; }
+        .contact-box p { margin-bottom: 8px; }
+        .version-info { color: #505070; font-size: 13px; margin-top: 40px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back">&larr; Back to PinTop</a>
+        <h1>Support</h1>
+        <p class="subtitle">Frequently asked questions and troubleshooting for PinTop v2.0</p>
+
+        <h2>Getting Started</h2>
+
+        <div class="faq-item">
+            <p class="faq-q">How do I install PinTop?</p>
+            <p class="faq-a">Download PinTop from <a href="https://shivalam.gumroad.com/l/pintop">our Gumroad page</a>. Open the DMG file and drag PinTop to your Applications folder. Double-click to launch. PinTop runs in your menu bar — look for the pin icon (📌) at the top of your screen.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">macOS says "PinTop can't be opened because Apple cannot check it for malicious software"</p>
+            <p class="faq-a">This is a standard macOS Gatekeeper message for apps downloaded outside the Mac App Store. PinTop is safe — it contains zero network calls and collects no data. To open PinTop:</p>
+            <ol>
+                <li><strong>Right-click</strong> (or Control-click) the PinTop app in your Applications folder</li>
+                <li>Select <strong>"Open"</strong> from the context menu</li>
+                <li>Click <strong>"Open"</strong> in the dialog that appears</li>
+            </ol>
+            <p class="faq-a">You only need to do this once. After the first launch, macOS will remember your choice and PinTop will open normally.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">What permissions does PinTop need?</p>
+            <p class="faq-a">PinTop requires two macOS permissions to function:</p>
+            <ol>
+                <li><strong>Accessibility</strong> — Needed for global keyboard shortcuts and window snapping. Go to <strong>System Settings &gt; Privacy &amp; Security &gt; Accessibility</strong> and enable PinTop.</li>
+                <li><strong>Screen Recording</strong> — Needed to capture window content for the overlay. Go to <strong>System Settings &gt; Privacy &amp; Security &gt; Screen Recording</strong> and enable PinTop.</li>
+            </ol>
+            <p class="faq-a">PinTop will prompt you for these permissions on first launch. You may need to restart PinTop after granting permissions.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">How do I pin a window?</p>
+            <p class="faq-a">Click on the window you want to pin so it's in front, then press <code>Ctrl+Option+P</code>. The window will be captured as a floating overlay with a colored border. To unpin, press <code>Ctrl+Option+P</code> again.</p>
+        </div>
+
+        <h2>Keyboard Shortcuts</h2>
+        <p>All shortcuts use the <code>Ctrl+Option</code> modifier. Here is the complete reference:</p>
+
+        <table class="shortcut-table" aria-label="Keyboard shortcuts">
+            <tr><td>⌃⌥P</td><td>Pin / Unpin frontmost window</td></tr>
+            <tr><td>⌃⌥Q</td><td>Unpin all windows</td></tr>
+            <tr><td>⌃⌥←→</td><td>Snap to left / right half</td></tr>
+            <tr><td>⌃⌥↑↓</td><td>Maximize / Center (70%)</td></tr>
+            <tr><td>⌃⌥U I J K</td><td>Snap to quarter (TL / TR / BL / BR)</td></tr>
+            <tr><td>⌃⌥+ −</td><td>Zoom in / out</td></tr>
+            <tr><td>⌃⌥[ ]</td><td>Decrease / increase opacity</td></tr>
+            <tr><td>⌃⌥M</td><td>Toggle Mini PiP mode</td></tr>
+        </table>
+
+        <h2>Troubleshooting</h2>
+
+        <div class="faq-item">
+            <p class="faq-q">PinTop says "Screen Recording permission required" but I already granted it</p>
+            <p class="faq-a">macOS sometimes requires a restart of the app after granting Screen Recording permission. Try these steps:</p>
+            <ol>
+                <li>Quit PinTop completely (right-click the menu bar icon &gt; Quit)</li>
+                <li>Go to <strong>System Settings &gt; Privacy &amp; Security &gt; Screen Recording</strong></li>
+                <li>Toggle PinTop off, then back on</li>
+                <li>Relaunch PinTop</li>
+            </ol>
+            <p class="faq-a">If the issue persists, try restarting your Mac. macOS occasionally caches permission states.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">Keyboard shortcuts don't work</p>
+            <p class="faq-a">This is usually an Accessibility permission issue. Check that PinTop is enabled in <strong>System Settings &gt; Privacy &amp; Security &gt; Accessibility</strong>. If it's already enabled, try toggling it off and on, then relaunch PinTop.</p>
+            <p class="faq-a">Note: If another app uses the same shortcut (Ctrl+Option+P), there may be a conflict. Check other utility apps for overlapping shortcuts.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">The overlay looks blurry or low resolution</p>
+            <p class="faq-a">PinTop captures at your display's native resolution. If the overlay appears blurry, try unpinning and re-pinning the window. This forces PinTop to recapture at the current display resolution, which helps when switching between monitors with different pixel densities.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">PinTop uses too much CPU / battery</p>
+            <p class="faq-a">PinTop automatically reduces the capture frame rate from 30fps to 15fps when your Mac is on battery power. If you're still experiencing high CPU usage, try unpinning windows you're not actively using. Each pinned window uses a separate capture stream.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">The pinned overlay doesn't follow the window when I move it</p>
+            <p class="faq-a">The overlay updates its position every 100ms. There may be a very brief delay when you move the original window. This is normal and the overlay will catch up almost immediately.</p>
+        </div>
+
+        <h2>License &amp; Trial</h2>
+
+        <div class="faq-item">
+            <p class="faq-q">How does the free trial work?</p>
+            <p class="faq-a">PinTop includes a 7-day free trial with full functionality. No credit card is required. After 7 days, you'll need to purchase a license key to continue using PinTop. The trial period cannot be extended or reset.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">How do I activate my license?</p>
+            <p class="faq-a">After purchasing from <a href="https://shivalam.gumroad.com/l/pintop">Gumroad</a>, you'll receive a license key in the format <code>XXXXX-XXXXX-XXXXX-XXXXX</code>. To activate:</p>
+            <ol>
+                <li>Click the PinTop menu bar icon</li>
+                <li>Select "Activate License"</li>
+                <li>Paste your license key and click "Activate"</li>
+            </ol>
+            <p class="faq-a">Each license key is bound to your Mac's hardware. One purchase covers up to 3 personal Macs.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">I bought PinTop but lost my license key</p>
+            <p class="faq-a">Check your email for the Gumroad purchase receipt — your license key is included there. You can also access your purchases at <a href="https://app.gumroad.com/library">app.gumroad.com/library</a>. If you still can't find it, contact us and we'll help.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-q">Can I transfer my license to a new Mac?</p>
+            <p class="faq-a">Your license covers up to 3 Macs. Simply install PinTop on your new Mac and activate with the same license key. If you've reached the device limit, contact us and we'll help you transfer.</p>
+        </div>
+
+        <h2>System Requirements</h2>
+        <ul>
+            <li><strong>macOS 14.0 (Sonoma)</strong> or later</li>
+            <li>Apple Silicon (M1 and later) or Intel — Universal Binary</li>
+            <li>Accessibility and Screen Recording permissions</li>
+            <li>~2MB disk space</li>
+        </ul>
+
+        <h2>Refund Policy</h2>
+        <p>We offer a <strong>30-day money-back guarantee</strong>. If you're not satisfied with PinTop for any reason, contact us within 30 days of purchase for a full refund. No questions asked.</p>
+
+        <h2>Contact Us</h2>
+        <div class="contact-box">
+            <p><strong>Email:</strong> <a href="mailto:pintopapp@proton.me">pintopapp@proton.me</a></p>
+            <p>We typically respond within 24 hours. When reporting an issue, please include:</p>
+            <ul>
+                <li>Your macOS version (e.g., macOS 15.3)</li>
+                <li>What you were doing when the issue occurred</li>
+                <li>Any error messages you saw</li>
+            </ul>
+        </div>
+
+        <p class="version-info">PinTop v2.0.0 &middot; &copy; 2026 PinTop</p>
+    </div>
+</body>
+</html>

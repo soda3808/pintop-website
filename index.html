@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PinTop lets you pin any window to float above everything else on macOS. Snap, zoom, adjust opacity, mini PiP — all via keyboard shortcuts. $9.99 one-time purchase.">
+    <meta name="keywords" content="macOS, window manager, always on top, pin window, picture in picture, PiP, productivity, utility">
+    <meta name="author" content="PinTop">
+
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:title" content="PinTop — Always on Top for macOS">
+    <meta property="og:description" content="Pin any window to float above everything else. Snap, zoom, opacity, mini PiP — all via keyboard shortcuts.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shivalam.gumroad.com/l/pintop">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="PinTop — Always on Top for macOS">
+    <meta name="twitter:description" content="Pin any window to float above everything else. Snap, zoom, opacity, mini PiP — all via keyboard shortcuts.">
+
+    <title>PinTop — Always on Top for macOS</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+            background: #0a0a1a;
+            color: #e8e8f0;
+            line-height: 1.6;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: linear-gradient(180deg, #1a1a3e 0%, #0d0d2b 60%, #0a0a1a 100%);
+        }
+
+        .hero-icon {
+            font-size: 56px;
+            margin-bottom: 12px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #6ea8fe, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero .tagline {
+            font-size: 18px;
+            color: #a0a0c0;
+            margin-bottom: 24px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 14px 36px;
+            background: linear-gradient(135deg, #4a7cf7, #6c5ce7);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(74, 124, 247, 0.3);
+        }
+
+        .cta-sub {
+            margin-top: 12px;
+            font-size: 14px;
+            color: #707090;
+        }
+
+        .features {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 48px;
+            color: #c0c0e0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 16px;
+            padding: 28px;
+            transition: border-color 0.2s;
+        }
+
+        .feature-card:hover {
+            border-color: rgba(106, 168, 254, 0.3);
+        }
+
+        .feature-card .icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .feature-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #d0d0f0;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: #9595b5;
+        }
+
+        .shortcuts {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+
+        .shortcuts h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 32px;
+            color: #c0c0e0;
+        }
+
+        .shortcut-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .shortcut-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .shortcut-table td:first-child {
+            font-family: 'SF Mono', 'Menlo', monospace;
+            font-size: 14px;
+            color: #a78bfa;
+            width: 140px;
+        }
+
+        .shortcut-table td:last-child {
+            color: #a0a0c0;
+        }
+
+        .shortcut-table thead {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+        }
+
+        .pricing {
+            text-align: center;
+            padding: 60px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .pricing h2 {
+            font-size: 28px;
+            margin-bottom: 16px;
+            color: #c0c0e0;
+        }
+
+        .requirements {
+            text-align: center;
+            padding: 40px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .requirements h2 {
+            font-size: 24px;
+            margin-bottom: 16px;
+            color: #c0c0e0;
+        }
+
+        .requirements p {
+            color: #8080a0;
+            font-size: 14px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 32px 20px;
+            color: #9090b0;
+            font-size: 13px;
+        }
+
+        .footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-icon">📌</div>
+        <h1>PinTop</h1>
+        <p class="tagline">Pin any window on top. Snap it anywhere. Stay focused.</p>
+        <a href="https://shivalam.gumroad.com/l/pintop" class="cta-button">Get PinTop — $9.99</a>
+        <p class="cta-sub">Includes 7-day free trial &middot; macOS 14.0+ &middot; Apple Silicon &amp; Intel &middot; One-time purchase, 30-day money-back guarantee</p>
+        <div style="max-width:720px;margin:28px auto 0;">
+            <img src="hero-screenshot.png" alt="PinTop in action — API reference pinned on top of a code editor with a blue border overlay" style="width:100%;border-radius:12px;border:1px solid rgba(255,255,255,0.1);box-shadow:0 12px 48px rgba(0,0,0,0.5);">
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>Everything you need, nothing you don't</h2>
+        <div class="feature-grid">
+            <article class="feature-card">
+                <div class="icon" role="img" aria-label="Pin">📌</div>
+                <h3>Always on Top</h3>
+                <p>Pin any window to float above everything else. Smooth real-time overlay that lets you click through to the window underneath.</p>
+            </article>
+            <article class="feature-card">
+                <div class="icon" role="img" aria-label="Window">🪟</div>
+                <h3>Window Snapping</h3>
+                <p>Snap windows to halves, quarters, maximize, or center with keyboard shortcuts. 8 positions, instant response.</p>
+            </article>
+            <article class="feature-card">
+                <div class="icon" role="img" aria-label="Zoom">🔍</div>
+                <h3>Zoom In Place</h3>
+                <p>Enlarge or shrink any window while keeping it centered. Perfect for presentations and screen sharing.</p>
+            </article>
+            <article class="feature-card">
+                <div class="icon" role="img" aria-label="Controls">🎛️</div>
+                <h3>Opacity Control</h3>
+                <p>Adjust overlay transparency from 100% to 25%. See through pinned windows while keeping them visible.</p>
+            </article>
+            <article class="feature-card">
+                <div class="icon" role="img" aria-label="Screen">📺</div>
+                <h3>Mini PiP</h3>
+                <p>Shrink any pinned window to a compact 320x180 corner view. Like Picture-in-Picture for any app.</p>
+            </article>
+            <article class="feature-card">
+                <div class="icon" role="img" aria-label="Customize">🎨</div>
+                <h3>Customizable</h3>
+                <p>7 border colors, per-window opacity, and a clean menu bar interface. Runs silently in the background.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="shortcuts">
+        <h2>Keyboard Shortcuts</h2>
+        <table class="shortcut-table" aria-label="Keyboard shortcuts">
+            <thead>
+                <tr><th>Shortcut</th><th>Action</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>⌃⌥P</td><td>Pin / Unpin frontmost window</td></tr>
+                <tr><td>⌃⌥Q</td><td>Unpin all windows</td></tr>
+                <tr><td>⌃⌥←→</td><td>Snap to left / right half</td></tr>
+                <tr><td>⌃⌥↑↓</td><td>Maximize / Center (70%)</td></tr>
+                <tr><td>⌃⌥U I J K</td><td>Snap to quarter (TL / TR / BL / BR)</td></tr>
+                <tr><td>⌃⌥+ −</td><td>Zoom in / out</td></tr>
+                <tr><td>⌃⌥[ ]</td><td>Decrease / increase opacity</td></tr>
+                <tr><td>⌃⌥M</td><td>Toggle Mini PiP mode</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <h2>Simple Pricing</h2>
+        <div style="max-width:400px;margin:24px auto;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:32px;">
+            <p style="font-size:48px;font-weight:700;color:#e8e8f0;margin-bottom:4px;">$9.99</p>
+            <p style="color:#a0a0c0;font-size:16px;margin-bottom:24px;">One-time purchase. No subscription.</p>
+            <ul style="text-align:left;list-style:none;padding:0;margin-bottom:24px;">
+                <li style="color:#a0a0c0;padding:6px 0;">&#10003; 7-day free trial, no credit card</li>
+                <li style="color:#a0a0c0;padding:6px 0;">&#10003; Use on up to 3 Macs you own</li>
+                <li style="color:#a0a0c0;padding:6px 0;">&#10003; Free updates for all v2.x releases</li>
+                <li style="color:#a0a0c0;padding:6px 0;">&#10003; 30-day money-back guarantee</li>
+            </ul>
+            <a href="https://shivalam.gumroad.com/l/pintop" class="cta-button" style="display:block;text-align:center;">Get PinTop</a>
+        </div>
+    </section>
+
+    <section class="requirements">
+        <h2>System Requirements</h2>
+        <p>macOS 14.0 (Sonoma) or later</p>
+        <p>Requires Accessibility and Screen Recording permissions</p>
+        <p>Apple Silicon &amp; Intel (Universal Binary)</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 PinTop. All rights reserved.</p>
+        <p style="margin-top:8px;"><a href="privacy.html" style="color:#8080b0;text-decoration:none;">Privacy Policy</a> &middot; <a href="terms.html" style="color:#8080b0;text-decoration:none;">Terms of Service</a> &middot; <a href="support.html" style="color:#8080b0;text-decoration:none;">Support</a> &middot; <a href="mailto:pintopapp@proton.me" style="color:#8080b0;text-decoration:none;">Contact</a></p>
+    </footer>
+</body>
+</html>
