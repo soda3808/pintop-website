@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Looking for DeskPins for Mac? DeskPins is Windows-only, but PinTop brings the same always-on-top window pinning to macOS — plus snapping, opacity, and Mini PiP.">
+    <meta name="keywords" content="deskpins mac, deskpins for mac, deskpins alternative, always on top mac, pin window mac, macOS always on top">
+    <meta name="author" content="PinTop">
+
+    <meta property="og:title" content="DeskPins for Mac? Meet PinTop — Always on Top for macOS">
+    <meta property="og:description" content="DeskPins is Windows-only. PinTop brings always-on-top window pinning to macOS, plus snapping, opacity control, and Mini PiP.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://soda3808.github.io/pintop-website/deskpins-for-mac.html">
+    <meta property="og:image" content="https://soda3808.github.io/pintop-website/hero-screenshot.png">
+
+    <link rel="canonical" href="https://soda3808.github.io/pintop-website/deskpins-for-mac.html">
+
+    <title>DeskPins for Mac — The macOS Alternative (PinTop)</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif;
+            background: #0a0a1a;
+            color: #e8e8f0;
+            line-height: 1.6;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: linear-gradient(180deg, #1a1a3e 0%, #0d0d2b 60%, #0a0a1a 100%);
+        }
+
+        .hero-icon { font-size: 56px; margin-bottom: 12px; }
+
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #6ea8fe, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero .tagline {
+            font-size: 18px;
+            color: #a0a0c0;
+            margin-bottom: 24px;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 14px 36px;
+            background: linear-gradient(135deg, #4a7cf7, #6c5ce7);
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(74, 124, 247, 0.3);
+        }
+
+        .cta-sub { margin-top: 12px; font-size: 14px; color: #707090; }
+
+        .content {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 20px;
+        }
+
+        .content h2 {
+            font-size: 26px;
+            color: #c0c0e0;
+            margin: 36px 0 16px;
+        }
+
+        .content p { color: #a0a0c0; margin-bottom: 16px; }
+
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 15px;
+        }
+
+        .compare-table th, .compare-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            text-align: left;
+        }
+
+        .compare-table th {
+            color: #d0d0f0;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .compare-table td { color: #a0a0c0; }
+        .compare-table td.yes { color: #6ee7a8; }
+        .compare-table td.no { color: #707090; }
+
+        .faq h3 { font-size: 18px; color: #d0d0f0; margin: 24px 0 8px; }
+        .faq p { font-size: 15px; }
+
+        .bottom-cta {
+            text-align: center;
+            padding: 48px 20px 64px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .bottom-cta h2 { font-size: 26px; color: #c0c0e0; margin-bottom: 20px; }
+
+        .footer {
+            text-align: center;
+            padding: 32px 20px;
+            color: #9090b0;
+            font-size: 13px;
+        }
+
+        .footer a:hover { text-decoration: underline; }
+
+        a.inline { color: #6ea8fe; text-decoration: none; }
+        a.inline:hover { text-decoration: underline; }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is there a version of DeskPins for Mac?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. DeskPins is a Windows-only utility and has never been ported to macOS. PinTop is a native macOS app that provides the same always-on-top window pinning, built with Apple's ScreenCaptureKit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I keep a window always on top in macOS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "macOS has no built-in always-on-top option for app windows. PinTop adds it: press Ctrl+Option+P to pin the frontmost window so it floats above everything, across all Spaces and full-screen apps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does PinTop work on Apple Silicon Macs?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. PinTop ships as a universal binary that runs natively on both Apple Silicon and Intel Macs, and requires macOS 14.0 (Sonoma) or later."
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-icon">📌</div>
+        <h1>DeskPins for Mac? Meet PinTop.</h1>
+        <p class="tagline">DeskPins is Windows-only — it was never ported to macOS. PinTop brings the same one-keystroke "always on top" pinning to your Mac, and goes further.</p>
+        <a href="https://shivalam.gumroad.com/l/pintop" class="cta-button">Get PinTop — $9.99</a>
+        <p class="cta-sub">One-time purchase &middot; macOS 14.0+ &middot; Apple Silicon &amp; Intel &middot; 30-day money-back guarantee</p>
+    </section>
+
+    <div class="content">
+        <h2>Why there's no DeskPins on macOS</h2>
+        <p>On Windows, DeskPins lets you "pin" any window so it stays above every other window — a tiny tool thousands of people rely on daily. macOS has never offered this: there is no built-in always-on-top option, and DeskPins itself is built on Windows APIs that don't exist on the Mac.</p>
+        <p><a class="inline" href="index.html">PinTop</a> was built to fill exactly that gap, natively, using Apple's ScreenCaptureKit. Pin any window with <strong>⌃⌥P</strong> and it floats above everything — across Spaces and even over full-screen apps — while staying fully click-through, so you keep working in the window underneath.</p>
+
+        <h2>DeskPins vs PinTop</h2>
+        <table class="compare-table" aria-label="DeskPins and PinTop feature comparison">
+            <thead>
+                <tr><th>Feature</th><th>DeskPins (Windows)</th><th>PinTop (macOS)</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Pin any window on top</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+                <tr><td>One-keystroke pin toggle</td><td class="yes">✓</td><td class="yes">✓ &nbsp;⌃⌥P</td></tr>
+                <tr><td>Multiple pins at once</td><td class="yes">✓</td><td class="yes">✓ &nbsp;up to 20</td></tr>
+                <tr><td>Works over full-screen apps</td><td class="no">—</td><td class="yes">✓</td></tr>
+                <tr><td>Window snapping (8 positions)</td><td class="no">—</td><td class="yes">✓</td></tr>
+                <tr><td>Opacity control (25–100%)</td><td class="no">—</td><td class="yes">✓</td></tr>
+                <tr><td>Mini PiP corner mode, resizable</td><td class="no">—</td><td class="yes">✓</td></tr>
+                <tr><td>Platform</td><td>Windows</td><td>macOS 14+ (Universal)</td></tr>
+            </tbody>
+        </table>
+
+        <div class="faq">
+            <h2>Frequently asked questions</h2>
+            <h3>Is there a version of DeskPins for Mac?</h3>
+            <p>No — DeskPins is Windows-only and has never been ported. PinTop is a native macOS app that covers the same core need: keeping any window on top of everything else.</p>
+            <h3>How do I keep a window always on top on a Mac?</h3>
+            <p>Install PinTop, grant it Accessibility and Screen Recording permissions, then press ⌃⌥P on any window. A colored border confirms the pin; press ⌃⌥P again to release it.</p>
+            <h3>Does it work on Apple Silicon?</h3>
+            <p>Yes — PinTop is a universal binary, native on both Apple Silicon and Intel, requiring macOS 14.0 (Sonoma) or later. The app is notarized by Apple.</p>
+        </div>
+    </div>
+
+    <section class="bottom-cta">
+        <h2>Pin your first window in under a minute</h2>
+        <a href="https://shivalam.gumroad.com/l/pintop" class="cta-button">Get PinTop — $9.99</a>
+        <p class="cta-sub">30-day money-back guarantee &middot; <a class="inline" href="index.html">See all features</a></p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 PinTop. All rights reserved.</p>
+        <p style="margin-top:8px;"><a href="index.html" style="color:#8080b0;text-decoration:none;">Home</a> &middot; <a href="privacy.html" style="color:#8080b0;text-decoration:none;">Privacy Policy</a> &middot; <a href="terms.html" style="color:#8080b0;text-decoration:none;">Terms of Service</a> &middot; <a href="support.html" style="color:#8080b0;text-decoration:none;">Support</a> &middot; <a href="mailto:pintopapp@proton.me" style="color:#8080b0;text-decoration:none;">Contact</a></p>
+    </footer>
+</body>
+</html>
