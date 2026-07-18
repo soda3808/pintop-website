@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PinTop Privacy Policy — Zero data collection, zero analytics, zero network calls. Everything happens locally on your Mac.">
+    <meta name="description" content="PinTop Privacy Policy — no analytics or tracking. Screen capture stays on-device. Direct edition may make one license check to Gumroad.">
     <meta name="author" content="PinTop">
     <title>Privacy Policy — PinTop</title>
     <style>
@@ -27,62 +27,56 @@
     <div class="container">
         <a href="index.html" class="back">&larr; Back to PinTop</a>
         <h1>Privacy Policy</h1>
-        <p class="date">Effective date: March 6, 2026</p>
+        <p class="date">Effective date: July 18, 2026 (updated for accuracy)</p>
 
         <h2>Summary</h2>
-        <p>PinTop does not collect, store, or transmit any personal data. Everything stays on your Mac.</p>
+        <p>PinTop does not collect analytics, telemetry, or advertising data. Window capture stays on your Mac. The <strong>direct (Gumroad) edition</strong> makes <strong>one optional network request</strong> when you activate a license key.</p>
 
         <h2>Screen Recording</h2>
-        <p>PinTop uses macOS Screen Recording permission to capture window content for the always-on-top overlay display. This capture is:</p>
+        <p>PinTop uses macOS Screen Recording permission to capture window content for the always-on-top overlay. This capture is:</p>
         <ul>
-            <li>Processed entirely on your device in real-time</li>
-            <li>Never saved to disk</li>
-            <li>Never transmitted over any network</li>
-            <li>Immediately discarded after rendering each frame</li>
+            <li>Processed on your device in real time</li>
+            <li>Never saved to disk as a recording</li>
+            <li>Never uploaded for analytics or cloud sync</li>
+            <li>Discarded after each frame is shown</li>
         </ul>
 
         <h2>Accessibility</h2>
         <p>PinTop uses macOS Accessibility permission to:</p>
         <ul>
             <li>Register global keyboard shortcuts</li>
-            <li>Move and resize windows for snap and zoom features</li>
+            <li>Move and resize windows for snap and zoom</li>
         </ul>
-        <p>No window content, text, or user input is read or recorded through the Accessibility API.</p>
+        <p>No window content, text, or keystrokes are logged through Accessibility.</p>
 
-        <h2>Data Collection</h2>
-        <p>PinTop does <strong>not</strong>:</p>
+        <h2>What we do not do</h2>
         <ul>
-            <li>Collect any analytics or telemetry</li>
-            <li>Track usage patterns</li>
-            <li>Send crash reports automatically</li>
-            <li>Connect to any server or external service</li>
-            <li>Store any user data, preferences, or settings externally</li>
+            <li>No analytics or telemetry</li>
+            <li>No usage tracking dashboards</li>
+            <li>No crash reports sent automatically</li>
+            <li>No ads or third-party trackers</li>
         </ul>
 
-        <h2>Third-Party Services</h2>
-        <p>PinTop does not integrate with any third-party analytics, advertising, or tracking services.</p>
-
-        <h2>Local Storage</h2>
-        <p>PinTop stores minimal preferences (such as launch-at-login setting) using macOS system APIs. These preferences remain on your device and are managed by macOS.</p>
-
-        <h2>License Verification (Direct Distribution Only)</h2>
-        <p>For the version distributed outside the Mac App Store, PinTop generates a hardware identifier derived from your Mac's hardware properties. This identifier is:</p>
+        <h2>License verification (Gumroad / direct edition)</h2>
+        <p>When you paste a Gumroad license key and activate, PinTop may send a <strong>one-time HTTPS request</strong> to Gumroad’s license API (<code>api.gumroad.com</code>) with the license key (and product identity). That check confirms the key is valid and not refunded.</p>
         <ul>
-            <li>Used solely to bind your license key to your specific Mac</li>
-            <li>Computed locally and never automatically transmitted to any server</li>
-            <li>A one-way hash that cannot be reversed to reveal hardware details</li>
-            <li>Displayed in the license activation dialog so you may voluntarily share it with us when requesting a license key</li>
+            <li>No Screen Recording frames are sent</li>
+            <li>Hardware binding for the trial and key is stored in your Mac’s Keychain</li>
+            <li>After a successful activation, day-to-day use does not require ongoing network access</li>
         </ul>
-        <p>The Mac App Store version does not use hardware identifiers — Apple handles all license validation.</p>
+        <p>If Gumroad is unreachable, offline / support keys may still work when issued that way.</p>
 
-        <h2>Children's Privacy</h2>
-        <p>PinTop does not collect data from anyone, including children under 13.</p>
+        <h2>Local storage</h2>
+        <p>Preferences (e.g. border colour, opacity, Mini PiP size, activity highlight) and trial/license state are stored locally via macOS UserDefaults and Keychain.</p>
+
+        <h2>Children’s privacy</h2>
+        <p>PinTop is not directed at children under 13 and does not knowingly collect children’s data.</p>
 
         <h2>Changes</h2>
-        <p>If this policy changes, the updated version will be posted on this page with a new effective date.</p>
+        <p>Updates to this policy will be posted here with a new effective date.</p>
 
         <h2>Contact</h2>
-        <p>Questions about this policy? Email <a href="mailto:pintopapp@proton.me">pintopapp@proton.me</a></p>
+        <p>Questions? <a href="mailto:pintopapp@proton.me">pintopapp@proton.me</a></p>
     </div>
 </body>
 </html>
