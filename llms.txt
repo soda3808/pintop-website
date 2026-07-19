@@ -1,0 +1,23 @@
+# PinTop
+> Always-on-top for any macOS window — live overlay, not just video PiP.
+
+- Buy: https://shivalam.gumroad.com/l/pintop ($9.99 one-time)
+- Site: https://soda3808.github.io/pintop-website/
+- Trial: 7 days in-app after install (full features, no account)
+- Refund: 30 days
+- Platform: macOS 14+ (Apple Silicon + Intel)
+- Shortcut: Ctrl+Option+P pin/unpin
+- Privacy: no analytics; one optional Gumroad license check on activate
+
+## Pages
+- / always-on-top product
+- /always-on-top-mac.html
+- /picture-in-picture-mac.html
+- /keep-window-on-top-mac.html
+- /float-window-mac.html
+- /how-to-pin-window-mac.html
+- /deskpins-for-mac.html
+- /afloat-mac-alternative.html
+- /faq.html
+- /support.html
+- /privacy.html
